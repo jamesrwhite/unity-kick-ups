@@ -7,7 +7,7 @@ function Start() {
 	menu = GameObject.Find('Menu');
 }
 
-function OnCollisionEnter(collision : Collision) {
+function OnCollisionEnter() {
 	// Set the current score to 0 if the ball hits the pitch
 	menu.GetComponent(Menu).CurrentScore = 0;
 }
